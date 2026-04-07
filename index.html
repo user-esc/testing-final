@@ -53,22 +53,39 @@
     
     .two-grids {
       display: grid;
-      grid-template-columns: 30% 70%;
+      grid-template-columns: 25% 55% 5%;
+      grid-template-rows: 15% auto auto;
       overflow: hidden;
-      grid-gap: 50px;
+      grid-gap: 20px;
       align-items: start;
     }
-  
-
     
-    .three-grids {
-      
+/*     .two-grids div {
+  background-color: rgba(255, 255, 255, 0.8);
+} */
+  
+    .blog-image {
+      grid-row: 1 / span 2;
+    }
+    
+    .blog-title {
+      grid-column: 2 / span 2;
+    }
+    
+    .blog-description {
+      grid-column: 2 / span 3;
+    }
+    
+    .blog-button {
+      position: relative;
+      top: 25px;
+      left: 40px;
     }
     
     h2 {
       font-size: 2.5em;
       margin-bottom: 0;
-
+      margin-top: 0;
     }
     
     nav {
@@ -118,24 +135,35 @@
         <li>Contact</li>
       </ul>
     </nav>
-    
-    <h1 style="padding-top: 100px;">Lockwood & Co.</h1>
-    <p style="padding-bottom: 50px;">
-    At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavorus that'll make your taste buds sing.
-    </p>
+    <h1>
+      Blog!
+    </h1>
     
     <div class="two-grids">
-  <div><img src="testing.png" alt="Beef banh mi" width=100% height="250"></div>
-  <div>
-    <h2 style="padding-top: 0px; margin-top: 0px; border-top: 0px">
-      Protection against Ghost Lock 
-    </h2>
-    <p>
-      By: Lucy Carlyle
-    </p>
-    <p>Investigating the death of famous actress Annabel Ward Investigating the death of famous actress Annabel WardInvestigating the death of famous actress Annabel Ward</p></div>
-  <div><img src="testing.png" alt="Beef banh mi" width=100% height="220"></div>  
-  <div><p>hello there how are we doing</p></div>
+      <div class="blog-image"><img src="testing.png" alt="Beef banh mi" width=100% height="220"></div>  
+      <div class="blog-title"><h2>hello there how are we doing</h2></div>
+      <div class="blog-button"><button type="button">Click Me!</button></div>
+      <div class="blog-description">
+        <p> By: Lucy Carlyle </p>
+        <p style="margin-top: 0;">descriptionasfklfa sdflkasdflasdf as descriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf as descriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf as</p></div>
+    </div>
+    
+      <div class="two-grids">
+      <div class="blog-image"><img src="testing.png" alt="Beef banh mi" width=100% height="220"></div>  
+      <div class="blog-title"><h2>hello there how are we doing</h2></div>
+      <div class="blog-button"><button type="button">Click Me!</button></div>
+      <div class="blog-description">
+        <p> By: Lucy Carlyle </p>
+        <p style="margin-top: 0;">descriptionasfklfa sdflkasdflasdf as descriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf as descriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf as</p></div>
+    </div>
+    
+        <div class="two-grids">
+      <div class="blog-image"><img src="testing.png" alt="Beef banh mi" width=100% height="220"></div>  
+      <div class="blog-title"><h2>hello there how are we doing</h2></div>
+      <div class="blog-button"><button type="button">Click Me!</button></div>
+      <div class="blog-description">
+        <p> By: Lucy Carlyle </p>
+        <p style="margin-top: 0;">descriptionasfklfa sdflkasdflasdf as descriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf as descriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf as</p></div>
     </div>
   </div>
 </body>

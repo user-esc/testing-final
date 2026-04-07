@@ -1,1 +1,132 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <title>Lockwood &amp; Co</title>
+  
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+  
+  <style>
+  
+    /* <weight>: Use a value from 300 to 700
+    / <uniquifier>: Use a unique and descriptive class name */
+
+    .overpass-mono-<uniquifier> {
+      font-family: "Overpass Mono", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    }
+
+    .instrument-serif-regular {
+      font-family: "Instrument Serif", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .instrument-serif-regular-italic {
+      font-family: "Instrument Serif", serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+    
+    body {
+      background-color: #101010;
+      font-family: "Overpass Mono", monospace;
+      font-size: 20px;
+      margin: 0 auto;
+      max-width:1440px;
+      color: white;
+    }
+    
+    * {
+  box-sizing: border-box;
+}
+    
+    .container {
+      max-width: 1200px;
+      margin: 120px;
+    }
+    
+    .two-grids {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      overflow: hidden;
+      grid-gap: 50px;
+    }
+    
+
+    
+    .three-grids {
+      
+    }
+    
+    nav {
+        
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      text-align: right;
+    }
+    
+    nav li {
+      display: inline;
+      padding: 0px 10px;
+    }
+    
+    nav a {
+      text-decoration: none;  
+      color: white;
+    }
+    
+    nav a:hover {
+      color: #e3446c;
+    }
+    
+    h1, h2, h3 {
+      font-family: "Instrument Serif", serif; 
+      font-weight: 400;
+    }
+    
+    h1 {
+      font-size: 4em;
+    }
+
+  </style>
+<!-- </head> -->
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    
+    <h1 style="padding-top: 100px;">Lockwood & Co.</h1>
+    <p>
+    At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavorus that'll make your taste buds sing.
+    </p>
+    
+    <div class="two-grids">
+  <div><p>hello there how are we doing asdfsadfsdfsdaf adfkasdfasdfasdfasdfasdfasd</p></div>
+  <div>
+    <h2>
+      Title of article
+    </h2>
+    <p>hello there how are we doin I'm starting to get worried that maybe I can't finish this on time I'm scared</p></div>
+  <div><p>hello there how are we doing</p></div>  
+  <div><p>hello there how are we doing</p></div>
+    </div>
+  </div>
+</body>
+</html>

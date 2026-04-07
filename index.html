@@ -10,7 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
   
   <style>
-  
+      * {
+  box-sizing: border-box;
+}
     /* <weight>: Use a value from 300 to 700
     / <uniquifier>: Use a unique and descriptive class name */
 
@@ -42,9 +44,6 @@
       color: white;
     }
     
-    * {
-  box-sizing: border-box;
-}
     
     .container {
       max-width: 1200px;
@@ -57,7 +56,6 @@
       grid-template-rows: 15% auto auto;
       overflow: hidden;
       grid-gap: 20px;
-      align-items: start;
     }
     
 /*     .two-grids div {
@@ -78,8 +76,22 @@
     
     .blog-button {
       position: relative;
-      top: 25px;
+      top: 10px;
       left: 40px;
+    }
+    .transparent-button {
+  background-color: transparent;
+  border: 2px solid #ffffff; /* Or none */
+  color: #ffffff;
+  padding: 15px 15px;
+}
+    
+    .blog {
+      display: grid;
+      grid-template-columns: 1.2fr 3fr 0.5fr;
+      overflow: hidden;
+      grid-gap: 30px;
+      align-items: start;
     }
     
     h2 {
@@ -159,11 +171,20 @@
     
         <div class="two-grids">
       <div class="blog-image"><img src="testing.png" alt="Beef banh mi" width=100% height="220"></div>  
-      <div class="blog-title"><h2>hello there how are we doing</h2></div>
-      <div class="blog-button"><button type="button">Click Me!</button></div>
+      <div class="blog-title"><h2>Protection against Ghost Lock </h2></div>
+      <div class="blog-button"><button type="button" class="transparent-button">View!</button></div>
       <div class="blog-description">
         <p> By: Lucy Carlyle </p>
         <p style="margin-top: 0;">descriptionasfklfa sdflkasdflasdf as descriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf as descriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf as</p></div>
+    </div>
+    
+            <div class="blog">
+      <div><img src="testing.png" alt="Beef banh mi" width=100% height="220"></div>  
+      <div><h2>hello there how are we doing</h2>
+              <p> By: Lucy Carlyle </p>
+        <p style="margin-top: 0;">descriptionasfklfa sdflkasdflasdf as descriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf as descriptionasfklfa sdflkasdflasdf asdescriptionasfklfa sdflkasdflasdf as</p>
+              </div>
+      <div><button type="button" style="padding: 15px 15px;">View more -></button></div>
     </div>
   </div>
 </body>
